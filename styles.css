@@ -38,11 +38,12 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 header nav ul li a:hover {
-    background: #444;
+    color: blue;
+    background: white;
     border-radius: 5px;
 }
 
@@ -58,15 +59,18 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .home .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .home .btn {
-    background: #007BFF;
+    background: #28a745;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -75,81 +79,55 @@ section {
 }
 
 .home .btn:hover {
-    background: #0056b3;
+    background: #218838;
 }
 
-.about .container, .services .container, .contact .container {
-    max-width: 1200px;
-    margin: 0 auto;
+.details, .faq {
+    padding: 50px 20px;
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    animation: fadeIn 2s;
+.faq {
+    background: #f9f9f9;
 }
 
-.services .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.faq h2 {
+    margin-bottom: 20px;
 }
 
-.service {
-    flex: 1;
-    min-width: 250px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
-    background-color: #fff;
-}
-
-.service img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.service:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
+.faq .faq-item {
+    margin-bottom: 20px;
     text-align: left;
 }
 
-.contact form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact form input, .contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact form button {
+.faq .faq-question {
     background: #007BFF;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
+    width: 100%;
+    text-align: left;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.contact form button:hover {
+.faq .faq-question:hover {
     background: #0056b3;
 }
 
-footer {
+.faq .faq-answer {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
     background: #333;
     color: #fff;
     text-align: center;

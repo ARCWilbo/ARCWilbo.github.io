@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Vextify</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .contact-header {
+        background: url("https://source.unsplash.com/1920x600/?contact")
+          no-repeat center center/cover;
+        color: #fff;
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .contact-header h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .contact-header p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 50px 0;
+      }
+
+      .contact-form,
+      .contact-details {
+        flex: 1;
+        min-width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-details h2,
+      .contact-form h2 {
+        margin-bottom: 20px;
+      }
+
+      .contact-details p {
+        margin: 10px 0;
+      }
+
+      .contact-details i {
+        color: #007bff;
+        margin-right: 10px;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .contact-form button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Vextify</h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you. Whether you have a question about our
+        services, pricing, or anything else, our team is ready to answer all
+        your questions.
+      </p>
+    </section>
+
+    <section class="contact-form-container">
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-details">
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i> Email: contact@vextify.com</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Address: 123 Vextify St, Suite
+          100, City, State, 12345
+        </p>
+        <h2>Business Hours</h2>
+        <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+        <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 2:00 PM</p>
+        <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Vextify. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
