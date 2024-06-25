@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BizWeb</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      /* Add some custom styles for Swiper */
+      .swiper-container {
+        width: 100%;
+        height: 400px;
+        margin: 20px 0;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+      }
+
+      .about-content {
+        animation: fadeIn 2s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>BizWeb</h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>
+            BizWeb is dedicated to helping small businesses establish a strong
+            online presence. Our team of expert designers and developers work
+            tirelessly to deliver beautiful, responsive, and effective websites
+            tailored to your needs. We believe in the power of the web to
+            transform your business and are committed to providing exceptional
+            service and support.
+          </p>
+          <p>
+            Founded in 2020, BizWeb has helped numerous small businesses reach
+            new heights by enhancing their online visibility and driving growth.
+            Join us and let's create something amazing together.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://source.unsplash.com/600x400/?team"
+                alt="Team Member 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://source.unsplash.com/600x400/?office"
+                alt="Team Member 2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://source.unsplash.com/600x400/?business"
+                alt="Team Member 3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://source.unsplash.com/600x400/?meeting"
+                alt="Team Member 4"
+              />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 BizWeb. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
